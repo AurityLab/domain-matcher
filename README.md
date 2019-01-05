@@ -6,7 +6,7 @@
 Check if given domain/url matches against domain patterns.
 
 ## Features
-* Only 2.7 kB (**~1kB gzipped**).
+* Only ~3 kB (**~1.2 kB gzipped**).
 * Suitable for browser environments.
 * No additional dependencies.
 
