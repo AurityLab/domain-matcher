@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "tsc",
-    "test": "mocha -r ts-node/register test/**/*.spec.ts"
+    "test": "TS_NODE_PROJECT=tsconfigTest.json mocha -r ts-node/register test/**/*.spec.ts"
   },
   "bugs": {
     "url": "https://github.com/AurityLab/domain-matcher/issues"

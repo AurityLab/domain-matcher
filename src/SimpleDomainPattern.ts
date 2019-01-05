@@ -1,3 +1,5 @@
+import {IPattern} from './api/IPattern'
+
 /**
  * Represents the pattern to match.
  *
@@ -6,13 +8,12 @@
  * - "*.test.auritylab.com"
  * - "test.*.*auritylab.com"
  */
-import {IPattern} from './api/IPattern'
-import {InvalidPattern} from './error/InvalidPattern'
-
 export class SimpleDomainPattern implements IPattern {
   private readonly pattern: RegExp
 
   constructor(pattern: string) {
+    this.validatePattern(pattern)
+
     this.pattern = new RegExp(this.transformPattern(pattern))
   }
 
@@ -21,14 +22,16 @@ export class SimpleDomainPattern implements IPattern {
   }
 
   private transformPattern(pattern: string): string {
-    return '^' + pattern.replace(/\*/gm, '([^.]+)') + '$'
+    if (pattern === '*')
+      return '^(.+)$'
+    else
+      return '^' + pattern.replace(/\*/gm, '([^.]+)') + '$'
   }
 
-  private validatePattern(pattern: string): InvalidPattern {
-    const validationRegex = /^([^.]+)(\.([^.]+))+$/gm
+  private validatePattern(pattern: string): void {
+    const validationRegex = /^([^.]+)(\.([^.]+))*$/gm
 
-    validationRegex.test(pattern)
-
-    return null
+    if (validationRegex.test(pattern) === false)
+      throw new Error('Pattern "' + pattern + '" is invalid')
   }
 }

@@ -3,7 +3,7 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "module": "es6",
+    "module": "commonjs",
     "target": "es5",
     "declaration": true,
     "removeComments": true,
@@ -14,7 +14,7 @@
   },
 
   "include": [
-    "src/**/*"
+    "test/**/*"
   ],
   "exclude": [
     "node_modules"
