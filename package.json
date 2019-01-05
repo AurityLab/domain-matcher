@@ -1,14 +1,11 @@
 {
   "name": "domain-matcher",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "author": "AurityLab <info@auritylab.com>",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "tsc",
-    "test": "TS_NODE_PROJECT=tsconfigTest.json mocha -r ts-node/register test/**/*.spec.ts"
-  },
+  "keywords": [
+    "domain",
+    "matcher",
+    "wildcard"
+  ],
   "bugs": {
     "url": "https://github.com/AurityLab/domain-matcher/issues"
   },
@@ -16,22 +13,28 @@
     "type": "git",
     "url": "https://github.com/AurityLab/domain-matcher"
   },
-  "devDependencies": {
-    "@auritylab/tslint-config-base": "^1.0.1",
-    "ts-loader": "^5.3.2",
-    "tslint": "^5.12.0",
-    "typescript": "^3.2.2"
-  },
+  "license": "Apache-2.0",
+  "author": "AurityLab <info@auritylab.com>",
   "files": [
     "/dist",
     "/README.md",
     "/LICENSE"
   ],
-  "dependencies": {
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "TS_NODE_PROJECT=tsconfigTest.json mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "devDependencies": {
+    "@auritylab/tslint-config-base": "^1.0.1",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "ts-node": "^7.0.1"
+    "ts-loader": "^5.3.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
   }
 }
