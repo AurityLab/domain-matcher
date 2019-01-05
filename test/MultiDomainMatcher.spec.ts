@@ -32,4 +32,12 @@ describe('MultiDomainMatcher.ts', () => {
     expect(matchResult.getPattern()).to.equal(pattern)
   })
 
+  it ('should accept full url input', () => {
+    const matcher = new MultiDomainMatcher()
+    matcher.registerPattern(new SimpleDomainPattern('*.auritylab.com'))
+
+    const result = matcher.match('https://www.auritylab.com')
+
+    expect(result.matches()).to.be.true
+  })
 })
