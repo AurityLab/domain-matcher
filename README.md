@@ -27,5 +27,5 @@ import { match } from 'domain-matcher'
 
 match('domain.matcher.com', '*.matcher.com') // => true
 match('matcher.com', '*.matcher.com') // => false
-match('matcher.com', '*.matcher.com', '*.com') // => false (Because '*.com' matches)
+match('matcher.com', '*.matcher.com', '*.com') // => true (Only '*.com' matches)
 ```
