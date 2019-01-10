@@ -1,15 +1,15 @@
 workflow "Test" {
   on = "push"
-  resolves = ["borales/actions-yarn@master-2"]
+  resolves = ["test"]
 }
 
-action "borales/actions-yarn@master" {
+action "install" {
   uses = "borales/actions-yarn@master"
   args = "install"
 }
 
-action "borales/actions-yarn@master-2" {
+action "test" {
   uses = "borales/actions-yarn@master"
-  needs = ["borales/actions-yarn@master"]
+  needs = ["install"]
   args = "test"
 }
