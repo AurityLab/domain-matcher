@@ -20,9 +20,9 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@types/chai@^4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.2.tgz#6b825013863d04868c15624ec8b7fdced88a47c6"
+"@types/chai@^4.2.5":
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.5.tgz#f8da153ebbe30babb0adc9a528b9ad32be3175a2"
 
 "@types/mocha@^5.2.7":
   version "5.2.7"
