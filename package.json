@@ -29,7 +29,7 @@
   "devDependencies": {
     "@auritylab/tslint-config-base": "^1.0.1",
     "@types/chai": "^4.2.9",
-    "@types/mocha": "^7.0.1",
+    "@types/mocha": "^8.0.2",
     "chai": "^4.2.0",
     "mocha": "^7.0.1",
     "ts-loader": "^6.2.1",
