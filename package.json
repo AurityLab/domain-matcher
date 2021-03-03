@@ -30,7 +30,7 @@
     "@auritylab/tslint-config-base": "^1.0.1",
     "@types/chai": "^4.2.15",
     "@types/mocha": "^8.2.1",
-    "chai": "^4.3.0",
+    "chai": "^4.3.1",
     "mocha": "^8.3.0",
     "ts-loader": "^8.0.10",
     "ts-node": "^9.1.1",
