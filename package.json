@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@auritylab/tslint-config-base": "^1.0.1",
-    "@types/chai": "^4.2.16",
+    "@types/chai": "^4.2.17",
     "@types/mocha": "^8.2.2",
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
